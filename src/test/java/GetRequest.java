@@ -7,10 +7,8 @@ public class GetRequest {
     @Test
     public void getRequest(){
         RestAssured.baseURI = "http://httpbin.org/get" ;
-        Response response = null;
-        response = RestAssured.get();
+        Response response = RestAssured.get();
 
-        System.out.println("Response: " + response.asString());
         System.out.println("Status code: " + response.getStatusCode());
     }
 }
